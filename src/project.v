@@ -16,7 +16,7 @@ module tt_um_delaychain (
 			 input wire	   rst_n    // reset_n - low to reset
 			 );
    
-   wire _unused = &{ena, uio+in, 1'b0};
+   wire _unused = &{ena, uio_in, 1'b0};
 
    assign uio_out = 0;
    assign uio_oe  = 0;
