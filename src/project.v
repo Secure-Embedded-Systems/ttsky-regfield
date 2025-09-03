@@ -24,7 +24,7 @@ module tt_um_delaychain (
    genvar i;
    generate
       for (i = 0; i < 8; i = i + 1) begin : thechain
-	 testchain #(.N(64)) chain1 (.clk(clk), .rst_n(rst_n), .din(ui_in[i]), .dout(uo_out[i]));
+	 testchain #(.N(80)) chain1 (.clk(clk), .rst_n(rst_n), .din(ui_in[i]), .dout(uo_out[i]));
       end
    endgenerate
 

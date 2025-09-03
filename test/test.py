@@ -25,7 +25,7 @@ async def test_project(dut):
     dut._log.info("Test project behavior")
 
 
-    for l in range(0,64):
+    for l in range(0,80):
       dut.ui_in.value = 255
       await ClockCycles(dut.clk, 1)
       dut.ui_in.value = 0
@@ -33,7 +33,7 @@ async def test_project(dut):
 
     dut.ui_in.value = 255
       
-    for p in range(0,70):
+    for p in range(0,90):
        dut._log.info(f"uo_out = {dut.uo_out.value}")
        await ClockCycles(dut.clk, 1)
        dut._log.info(f"uo_out = {dut.uo_out.value}")
