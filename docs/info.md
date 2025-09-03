@@ -9,12 +9,17 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+The module has limited use as a functional module; it's just one big sensor made out of flip-flops.
+This is a register field design, consisting of 8 chains of 64 flip-flops.
+In between each register, two back-to-back inverters are placed to avoid hold violations.
+The objective of this design is to study the impact of EM pulses on a field of initialized flip-flops.
 
 ## How to test
 
-Explain how to use your project
+You load a specific pattern into the flops in 64 cycles.
+Next, an EM pulse (and optional clock cycle) is injected using a Chipshouter (or similar) setup 
+Then, the pattern is scanned out to study impact on the values.
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+EM pulses require the use of an external probe such as Chipshouter.
